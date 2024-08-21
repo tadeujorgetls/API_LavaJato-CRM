@@ -24,7 +24,7 @@ public record DadosEndereco(
     String cidade,
 
     @NotBlank
-    @Pattern(regexp = "\\d{8}")
+    @Pattern(regexp = "\\d{5}-?\\d{3}")
     String cep) {
 
 }

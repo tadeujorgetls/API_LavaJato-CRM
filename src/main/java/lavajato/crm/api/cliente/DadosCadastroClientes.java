@@ -5,9 +5,10 @@ import java.util.Date;
 import org.hibernate.validator.constraints.br.CPF;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.Future;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Past;
@@ -22,9 +23,9 @@ public record DadosCadastroClientes(
     @NotBlank
     String telefone,
 
-    @DateTimeFormat
-    @Past
-    @Future
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
+    @DateTimeFormat(pattern = "dd/MM/yyyy")
+    @Past(message = "A data de nascimento deve ser uma data passada")
     Date dataDeNascimento,
 
     @NotBlank
