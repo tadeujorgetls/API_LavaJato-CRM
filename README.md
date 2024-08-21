@@ -1,2 +1,2 @@
-## Lava Jato CRM 🚗🚿
+## API Lava Jato CRM 🚗🚿
 Desenvolvi uma API em Java, utilizando o Spring Boot e MySQL, e dependências como Spring Boot DevTools, Spring Web, Spring Data JPA, Flyway Migration e MySQL Driver, para melhorar a gestão de serviços e clientes de um Lava Jato. O projeto proporciona um gerenciamento adequado das lavagens, solicitações dos clientes, controla os serviços e resultados. Além disso, a interface foi desenvolvida com Vue, garantindo uma experiência mais agradável para o usuário com interface amigável. O sistema ainda é capaz de progredir bastante, porém, já se apresenta em um versão funcional.
